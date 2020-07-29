@@ -51,7 +51,7 @@ class UiMainWindow(QWidget, Ui_Dialog):
         name = self.comboBox.currentText()
         self.sheet, self.num = self.open_sheet(name)
         total = self.num-1 if self.num else 0
-        self.set_text(self.sumLabel, "【" + name + "】总题数：" + str(total))
+        self.set_text(self.sumLabel, "【" + name + "】：" + str(total)+"题  ")
         self.ques_index = 1
         if self.num < 2:  # 没题
             self.set_text(self.label, "该分类暂无题目！")

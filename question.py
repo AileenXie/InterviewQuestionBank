@@ -101,7 +101,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Question Bank"))
         self.jumpBt.setText(_translate("Dialog", "题号跳转"))
         self.sumLabel.setText(_translate("Dialog", "总题数：0"))
         self.label.setText(_translate("Dialog", "等待出题..."))

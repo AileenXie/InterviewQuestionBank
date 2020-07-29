@@ -234,7 +234,6 @@ class UiMainWindow(QWidget, Ui_Dialog):
         """
         rows = self.sheet.row_values(self.ques_index)  # 获取行内容
         self.rows = rows
-        print(self.ques_index, rows[0])
         self.browser.setHtml("")  # 清空解析
         self.set_text(self.label, str(self.ques_index) + ". " + rows[0])  # 更新题目
         self.update_button()
@@ -244,10 +243,10 @@ class UiMainWindow(QWidget, Ui_Dialog):
         显示题解
         """
         if self.rows[2] == 1:
-            print("[Plaintext]")
+            # print("[Plaintext]")
             self.browser.setHtml(self.rows[1])
         else:
-            print("[Markdown]")
+            # print("[Markdown]")
             self.browser.setHtml(self.markdown_to_html(self.rows[1]))
         self.set_button_enabled(self.pushButton_4, False)
 
@@ -287,9 +286,9 @@ class UiMainWindow(QWidget, Ui_Dialog):
         html_tail = "\n</body>\n</html>"
         html = html_head+html+html_tail
         # print(html)
-        html_file = open("file.html", "w", encoding='utf-8')
-        html_file.write(html)
-        html_file.close()
+        # html_file = open("file.html", "w", encoding='utf-8')
+        # html_file.write(html)
+        # html_file.close()
 
         return html
 

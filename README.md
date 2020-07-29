@@ -7,6 +7,11 @@
 所以做了一个简易出题器，
 可以随机出题、按关键字搜索题目。
 
+题库使用Excel记录，默认读取问题库`questions.xlsx`，不同问题分类使用不同sheet记录。
+可以自行增改题库或者建立自己的题库。
+
+Excel文件第一列是问题，第二列是对应答案解析，支持`文本`和`markdown`格式的答案。
+
 ## 环境依赖
 ```python
 pip install PyQt5==5.15.0
@@ -16,7 +21,6 @@ pip install Markdown==3.2.2
 pip install python-markdown-math==0.7
 ```
 
-
 ## 使用
 一键运行
 
@@ -24,10 +28,6 @@ pip install python-markdown-math==0.7
 python main.py
 ```
 显示效果
-![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh7urqanoqj30xp0u0af9.jpg)
+![文本解析展示](./figure01.jpg)
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh7utq2nt4j31090u0aof.jpg)
-
-默认读取问题库`questions.xlsx`，不同问题分类使用不同sheet记录。
-可以自行增改题库或者建立自己的题库。
-第一列是问题，第二列是对应答案解析，支持`文本`和`markdown`格式的答案。
+![Markdown解析展示](./figure02.jpg)

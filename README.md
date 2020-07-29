@@ -27,7 +27,8 @@ pip install python-markdown-math==0.7
 ```python
 python main.py
 ```
-显示效果
-![文本解析展示](./figure01.jpg)
+显示效果：
 
-![Markdown解析展示](./figure02.jpg)
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh7vb7opxzj30tw0q2gp6.jpg" alt="ac6f7a5d.png" width="521" height="458" align="bottom" />
+
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh7vhyjrc5j30tm0oen37.jpg" alt="ac6f7a5d.png" width="521" height="458" align="bottom" />
